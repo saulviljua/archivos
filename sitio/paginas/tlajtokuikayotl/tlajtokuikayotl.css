@@ -1,0 +1,54 @@
+body {
+	font-family: 'Garamond', serif;
+}
+.centrar {
+	text-align: center;
+}
+.titulo {
+	width: 78%;
+	height: auto;
+}
+.tituloboton {
+	width: 8%;
+	height: auto;
+}
+.tituloboton:hover {
+	animation: invert 0.25s steps(1) infinite;
+}
+@keyframes invert {
+	0% {
+		filter: none;
+	}
+	50% {
+		filter: invert(1);
+	}
+	100% {
+		filter: none;
+	}
+}
+.fondo {
+	background-image: url('../../imagenes/tlajtokuikayotl/fondo.png');
+	background-size: 100% 100%;
+	background-position: center;
+	display: block;
+	justify-content: center;
+	text-align: center;
+}
+.fondo img {
+	margin-top: 25px;
+	width: 50%;
+	height: auto;
+}
+.pemex {
+	width: 59%;
+	height: auto;
+}
+.burbuja {
+	background-image: url('../../imagenes/tlajtokuikayotl/burbuja.png');
+	background-size: cover;
+	background-position: center;
+}
+.linear {
+	text-align: center;
+	color: black;
+}

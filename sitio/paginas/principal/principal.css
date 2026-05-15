@@ -1,0 +1,146 @@
+body {
+	font-family: 'Garamond', serif;
+}
+.borde {
+	position: relative;
+	width: auto;
+	height= 100%;
+}
+.borde2 {
+	position: relative;
+	width: auto;
+	height= 100%;
+}
+.borde::before {
+	content: "";
+	position: absolute;
+	right: -10px;
+	bottom: -10px;
+	top: -10px;
+	width: 80px;
+	background: url('../../imagenes/principal/columna.gif') repeat;
+	background-size: contain;
+	z-index: -1;
+}
+.borde::after {
+	content: "";
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	left: -10px;
+	height: 80px;
+	background: url('../../imagenes/principal/columna.gif') repeat;
+	background-size: contain;
+	z-index: -1;
+}
+.borde2::before {
+	content: "";
+	position: absolute;
+	left: -10px;
+	bottom: -10px;
+	top: -10px;
+	width: 80px;
+	background: url('../../imagenes/principal/columna.gif') repeat;
+	background-size: contain;
+	z-index: -1;
+}
+.borde2::after {
+	content: "";
+	position: absolute;
+	right: -10px;
+	bottom: -10px;
+	left: -10px;
+	height: 80px;
+	background: url('../../imagenes/principal/columna.gif') repeat;
+	background-size: contain;
+	z-index: -1;
+}
+.centrar {
+	text-align: center;
+}
+.titulo {
+	max-width: 70%;
+	max-height: auto;
+	margin-top: 70px;
+}
+.botones {
+	margin: 1% 0% 1% 3%;
+	text-align: center;
+}
+.imagenboton {
+	display: inline-block;
+	margin-right: 5%;
+}
+.imagenboton img {
+	width: 130%;
+	height: auto;
+}
+.imagenboton img:hover {
+	animation: invert 0.25s steps(1) infinite;
+}
+@keyframes invert {
+	0% {
+		filter: none;
+	}
+	50% {
+		filter: invert(1);
+	}
+	100% {
+		filter: none;
+	}
+}
+.mono {
+	display: block;
+}
+.imagenmono img {
+	float: left;
+	margin: 0% 1% 1% 8%;
+}
+.texto {
+	margin-bottom: 3%;
+}
+.encima {
+	margin-right: 7%;
+}
+.ana img {
+	max-width: 8%;
+	height: auto;
+	margin-right: 2%;
+}
+.linear {
+	text-align: center;
+	color: white;
+}
+@media (max-width: 800px) {
+	.titulo {
+		max-width: 63%;
+		max-height: auto;
+		margin-top: 19%;
+	}
+	.imagenmono img {
+		margin-left: 28%;
+	}
+	.encima {
+		flex-direction: column;
+		text-align: center;
+		width: 60%;
+		margin-left: 19%;
+	}
+	.botones {
+		margin: 1% 1% 1% 1%;
+		display: inline-block;
+	}
+	.imagenboton {
+		margin-right: 0%;
+	}
+	.imagenboton img {
+		width: 90%;
+		height: auto;
+	}
+	.ana img {
+		max-width: 40%;
+		height: auto;
+		margin-right: 2%;
+		margin-bottom: 3%;
+	}
+}

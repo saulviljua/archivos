@@ -1,0 +1,99 @@
+body {
+	font-family: 'Garamond', serif;
+	background-color: black;
+}
+.borde {
+	position: relative;
+	width: auto;
+	height= 100%;
+}
+.borde::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: url('../../imagenes/musica/amar.png') repeat;
+	background-size: 40px 40px;
+	z-index: -1
+}
+.centrar {
+	text-align: center;
+}
+.titulo {
+	width: 34%;
+	height: auto;
+}
+.tituloboton {
+	width: 7%;
+	height: auto;
+}
+.tituloboton:hover {
+	animation: invert 0.25s steps(1) infinite;
+}
+@keyframes invert {
+	0% {
+		filter: none;
+	}
+	50% {
+		filter: invert(1);
+	}
+	100% {
+		filter: none;
+	}
+}
+.galaria {
+	display: inline-block;
+	max-width: 20%;
+	height: auto;
+	margin: 3% 19% 0% 3%;
+}
+.pixel {
+	width: 1000%;
+	height: auto;
+	image-rendering: pixelated;
+	transform: scale(1);
+	transition: transform 0.3s ease, filter 0.3s ease;
+	cursor: pointer;
+}
+.galaria:hover .pixel {
+	transform: scale(1.1);
+}
+.encima {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+.encima img {
+	max-width: 90%;
+	max-height: 90%;
+}
+.ny {
+	width: 43%;
+	height: auto;
+}
+.linear {
+	text-align: center;
+	color: white;
+}
+.fondo {
+	background-image: url('../../imagenes/musica/fondo.png');
+	background-size: 100% 100%;
+	background-position: center;
+	display: block;
+	justify-content: center;
+	text-align: center;
+}
+@media (max-width: 800px) {
+	.pixel {
+		width: 300%;
+		height: auto;
+	}
+}

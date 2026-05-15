@@ -1,0 +1,93 @@
+<?php include 'log_visitor.php'; ?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Música Huitzitzilin</title>
+	<link rel="icon" type="image/png" href="../../imagenes/icono.png" />
+	<link rel="stylesheet" href="musica.css">
+	<script src="musica.js" defer></script>
+</head>
+<body>
+	<header class="borde">
+		<div class="centrar">
+			<a href="../../../index.html">
+				<img src="../../imagenes/regreso.png" alt="regresar" class="tituloboton">
+			</a>
+			<img src="../../imagenes/musica/portada.png" alt="portada" class="titulo">
+			<a href="../../../index.html">
+				<img src="../../imagenes/regreso.png" alt="regresar" class="tituloboton">
+			</a>
+		</div>
+	</header>
+	<galaria class="fondo">
+		<div class="galaria" onclick="showImagePetalos(this)">
+			<img src="../../imagenes/musica/petalos.png" alt="petalos_dominicales" class="pixel">
+			<audio src="../../audio/musica/petalos_dominicales.mp3" id="petalos" class="audio"></audio>
+		</div>
+		<div id="encima_petalos" class="encima" onclick="hideImagePetalos()">
+			<img id="encima_petalos_img" src="../../imagenes/musica/petalos_encima.png" alt="petalos">
+		</div>
+		<div class="galaria" onclick="showImageRetratos(this)">
+			<img src="../../imagenes/musica/retratos.png" alt="retratos" class="pixel">
+			<audio src="../../audio/musica/retratos.mp3" id="retratos" class="audio"></audio>
+		</div>
+		<div id="encima_retratos" class="encima" onclick="hideImageRetratos()">
+			<img id="encima_retratos_img" src="../../imagenes/musica/retratos_encima.png" alt="retratos">
+		</div>
+		<div class="galaria" onclick="showImageIntencion(this)">
+			<img src="../../imagenes/musica/intencion.png" alt="intencion_invalida" class="pixel">
+			<audio src="../../audio/musica/intencion_invalida.mp3" id="intencion" class="audio"></audio>
+		</div>
+		<div id="encima_intencion" class="encima" onclick="hideImageIntencion()">
+			<img id="encima_intencion_img" src="../../imagenes/musica/intencion_encima.png" alt="intencion">
+		</div>
+		<div class="galaria" onclick="showImageExtrano(this)">
+			<img src="../../imagenes/musica/extrano.png" alt="te_extraño" class="pixel">
+			<audio src="../../audio/musica/te_extrano.mp3" id="extrano" class="audio"></audio>
+		</div>
+		<div id="encima_extrano" class="encima" onclick="hideImageExtrano()">
+			<img id="encima_extrano_img" src="../../imagenes/musica/extrano_encima.png" alt="extraño">
+		</div>
+		<div class="galaria" onclick="showImageCiguena(this)">
+			<img src="../../imagenes/musica/ciguena.png" alt="cigüeña" class="pixel">
+			<audio src="../../audio/musica/ciguena.mp3" id="ciguena" class="audio"></audio>
+		</div>
+		<div id="encima_ciguena" class="encima" onclick="hideImageCiguena()">
+			<img id="encima_ciguena_img" src="../../imagenes/musica/ciguena_encima.png" alt="cigüeña">
+		</div>
+		<div class="galaria" onclick="showImageSolubilidad(this)">
+			<img src="../../imagenes/musica/solubilidad.png" alt="solubilidad" class="pixel">
+			<audio src="../../audio/musica/solubilidad.mp3" id="solubilidad" class="audio"></audio>
+		</div>
+		<div id="encima_solubilidad" class="encima" onclick="hideImageSolubilidad()">
+			<img id="encima_solubilidad_img" src="../../imagenes/musica/solubilidad_encima.png" alt="solubilidad">
+		</div>
+		<div class="galaria" onclick="showImageNosotros(this)" style="margin-bottom: 3%;">
+			<img src="../../imagenes/musica/nosotros.png" alt="nosotros" class="pixel">
+			<audio src="../../audio/musica/nosotros.mp3" id="nosotros" class="audio"></audio>
+		</div>
+		<div id="encima_nosotros" class="encima" onclick="hideImageNosotros()">
+			<img id="encima_nosotros_img" src="../../imagenes/musica/nosotros_encima.png" alt="nosotros">
+		</div>
+	</galaria>
+	<div class="centrar">
+		<div class="borde">
+			<a href="../../../index.html">
+				<img src="../../imagenes/regreso.png" alt="regresar" class="tituloboton">
+			</a>
+			<img src="../../imagenes/musica/ny.png" alt="Nueva_York" class="ny">
+			<a href="../../../index.html">
+				<img src="../../imagenes/regreso.png" alt="regresar" class="tituloboton">
+			</a>
+		</div>
+	</div>
+	<footer>
+		<div class="linear">
+			<small>Una rosa es una rosa</small>
+		</div>
+	</footer>
+</body>
+</html>

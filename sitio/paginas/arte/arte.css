@@ -1,0 +1,138 @@
+body {
+	font-family: 'Garamond', serif;
+	background-color: white;
+}
+.borde {
+	position: relative;
+	width: auto;
+	height= 100%;
+}
+.borde::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: url('../../imagenes/arte/corita.png') repeat;
+	background-size: 40px 40px;
+	z-index: -1
+}
+.centrar {
+	text-align: center;
+}
+.titulo {
+	width: 46%;
+	height: auto;
+}
+.tituloboton {
+	width: 7%;
+	height: auto;
+}
+.tituloboton:hover {
+	animation: invert 0.25s steps(1) infinite;
+}
+@keyframes invert {
+	0% {
+		filter: none;
+	}
+	50% {
+		filter: invert(1);
+	}
+	100% {
+		filter: none;
+	}
+}
+.galeria {
+	display: grid;
+	text-align: center;
+	justify-content: center;
+	background-image: url('../../imagenes/arte/fondo.png');
+	background-size: 100% 100%;
+	background-position: center;
+}
+.honey {
+	display: block;
+	margin: 2% 8% 0% 9%;
+	text-align: left;
+	justify-content: center;
+}
+.honey img {
+	float: left;
+	margin-right: 2%;
+	width: 40%;
+	heigh: auto;
+	border: 10px solid black;
+	border-radius: 10px;
+}
+.amapolas {
+	display: block;
+	margin: 2% 8% 0% 9%;
+	text-align: left;
+	justify-content: center;
+}
+.amapolas img {
+	float: left;
+	margin-right: 2%;
+	width: 40%;
+	heigh: auto;
+	border: 10px solid black;
+	border-radius: 10px;
+}
+.alas {
+	display: block;
+	margin: 2% 18% 0% 19%;
+	text-align: left;
+	justify-content: center;
+}
+.alas img {
+	float: left;
+	margin-right: 2%;
+	width: 20%;
+	heigh: auto;
+	border: 10px solid black;
+	border-radius: 10px;
+}
+.coleccion {
+	display: block;
+	margin: 2% 9% 0% 10%;
+	text-align: left;
+	justify-content: center;
+}
+.coleccion img {
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	width: 33%;
+	heigh: auto;
+	border: 10px solid black;
+	border-radius: 10px;
+}
+.graduacion {
+	display: block;
+	margin: 2% 9% 0% 10%;
+	text-align: left;
+	justify-content: center;
+}
+.graduacion img {
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	width: 33%;
+	heigh: auto;
+	border: 10px solid black;
+	border-radius: 10px;
+}
+.ciudad {
+	width: 31%;
+	height: auto;
+}
+.linear {
+	text-align: center;
+	color: black;
+}
+@media (max-width: 800px) {
+	.alas {
+		margin: 2% 10% 0% 11%;
+	}
+}
